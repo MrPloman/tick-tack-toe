@@ -1,0 +1,60 @@
+#board {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    border: 3px solid rgba(0, 0, 0, 0.451);
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.player1 {
+    background: rgb(10, 37, 68);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    cursor: auto;
+}
+.player1:after {
+    content: "";
+    height: 150px;
+    border-left: 5px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 73px;
+}
+
+.player1:before {
+    content: "";
+    height: 150px;
+    border-left: 5px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 73px;
+}
+
+.player2 {
+    background: rgb(75, 26, 26);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    cursor: auto;
+}
+.player2:after {
+    content: "";
+    height: 120px;
+    width: 120px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}

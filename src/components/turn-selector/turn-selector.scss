@@ -1,0 +1,26 @@
+#players {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    #player1 {
+        background-color: rgba(255, 0, 0, 0.269);
+    }
+    #player2 {
+        background-color: rgba(0, 0, 255, 0.23);
+    }
+
+    #player1.yourTurn,
+    #player2.yourTurn {
+        font-weight: 900;
+        background-color: black;
+        color: white;
+    }
+    .turn {
+        padding: 20px;
+        font-size: 15px;
+        width: fit-content;
+        margin: 0 10px 0 10px;
+    }
+}
